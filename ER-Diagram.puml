@@ -79,5 +79,100 @@ Restaurant ||--{ Table : one-to-many
 Table ||--{ Booking : one-to-many
 Customer ||--{ Booking : one-to-many
 
+newpage
+title Library System
+
+entity Item{
+id:integer<<PK>>
+--
+name:nvarchar(50)
+details:nvarchar(50)
+}
+
+entity Student {
+id:integer<<PK>>
+--
+name:nvarchar(50)
+limit:integer
+}
+
+entity Booking {
+id:integer<<PK>>
+student-id:integer<<FK>>
+--
+startDate:dateTime
+endDate:dateTime
+}
+
+Student ||--{ Booking :one-to-many
+Item ||--{ Booking : one-to-many
+
+newpage
+title Micro-blogging
+
+entity User {
+id:integer <<PK>>
+--
+name:nvarchar(50)
+}
+entity Post {
+id:integer <<PK>>
+user-id:integer<<FK>>
+--
+text:nvarchar(max)
+}
+entity Comment {
+id:integer <<PK>>
+user-id:integer<<FK>>
+post-id:integer<<FK>>
+--
+text:nvarchar(50)
+}
+
+User ||--o{ Post :one-to-zero-or-many
+Post ||--o{ Comment:one-to-zero-or-many
+User ||--o{ Comment: one-to-zero-or-many
+
+newpage
+title Online learning system
+
+entity Student{
+id: integer<<PK>>
+--
+name:nvarchar(50)
+contactDetails:nvarchar(50)
+}
+entity Course{
+id:integer <<PK>>
+--
+name:nvarchar(50)
+roomLink:nvarchar(50)
+}
+entity Teacher{
+id:integer <<PK>>
+--
+name:nvarchar(50)
+}
+
+entity StudentCourse{
+id:integer <<PK>>
+student-id:integer <<FK>>
+course-id:integer <<FK>>
+--
+}
+entity TeacherCourse{
+id:integer <<PK>>
+teacher-id:integer <<FK>>
+course-id:integer <<FK>>
+--
+}
+Student ||--|{ StudentCourse
+Course ||--|{ StudentCourse
+Course ||--|{ TeacherCourse
+Teacher ||--|{ TeacherCourse
+
+
+
+
 
 @enduml
