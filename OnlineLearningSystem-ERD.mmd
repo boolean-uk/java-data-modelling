@@ -1,0 +1,40 @@
+erDiagram
+    COURSES {
+        int course_id PK
+        int teacher_id FK
+        varchar(50) name
+        varchar(200) description
+        datetime startdate
+        datetime enddate
+    }
+    TEACHERS {
+        int teacher_id PK
+        varchar(50) name
+    }
+    COURSETEACHERS {
+        int course_id FK
+        int teacher_id FK
+    }
+    STUDENTS {
+        int student_id PK
+        int course_id FK
+        varchar(50) name
+        varchar(50) email
+    }
+    ASSIGNMENTS {
+        int assignment_id
+        varchar(200) description
+        datetime startdate
+        datetime enddate
+    }
+    STUDENTASSIGNMENTS {
+        int student_id FK
+        int assingment_id FK
+        int score
+    }
+
+    COURSES ||--|{ COURSETEACHERS : has
+    TEACHERS ||--|{ COURSETEACHERS : has
+    STUDENTS }|--|| COURSES : has
+    STUDENTS ||--|{ STUDENTASSIGNMENTS : has
+    ASSIGNMENTS ||--|{ STUDENTASSIGNMENTS : has
