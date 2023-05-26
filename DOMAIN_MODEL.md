@@ -12,7 +12,7 @@
 
 #### Entity Relationship Diagram
 
-![](exercise3-uml.png)
+![](assets/exercise3-uml.png)
 
 </p>
 
@@ -30,5 +30,5 @@
 
 #### Entity Relationship Diagram
 
-![](exerice4-uml.png)
+![](assets/exerice4-uml.png)
 </p>
