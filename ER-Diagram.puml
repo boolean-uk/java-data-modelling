@@ -1,0 +1,47 @@
+@startuml
+'https://plantuml.com/ie-diagram#ea995898864fb0ea
+
+'Type	        Symbol
+'Zero or One	|o--
+'Exactly One	||--
+'Zero or Many	}o--
+'One or Many	}|--
+
+'entity Entity01 {
+'  * identifying_attribute
+'  --
+'  * mandatory_attribute
+'  optional_attribute
+'}
+entity Customer{
+*id:Integer<<PK>>
+--
+name:nvarchar(50)
+contactDetails:nvarchar(50)
+}
+entity Product{
+*id:Integer<<PK>>
+--
+name:nvarchar(50)
+details:nvarchar(50)
+price:decimal
+stockLevel: integer
+}
+entity Order{
+*id:Integer<<PK>>
+*customer-id: integer <<FK>>
+--
+deliveryDetails:nvarchar(50)
+orderDate:dateTime
+}
+entity OrderLineItem{
+*id:Integer<<PK>>
+*order-id:integer <<FK>>
+--
+*quantity:integer
+}
+Customer ||--{ Order :one-to-many
+Order ||--{ OrderLineItem:one-to-many
+Product ||--|| OrderLineItem : one-to-one
+
+@enduml
