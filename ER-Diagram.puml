@@ -45,4 +45,39 @@ Customer ||--{ Order :one-to-many
 Order ||--{ OrderLineItem:one-to-many
 Product ||--|| OrderLineItem : one-to-one
 
+newpage
+title Restaurant
+entity Restaurant{
+id:integer<<PK>>
+--
+name:nvarchar(50)
+address:nvarchar(50)
+}
+
+entity Customer{
+id:integer <<PK>>
+--
+contactDetails:nvarchar(50)
+}
+entity Table{
+id:integer <<PK>>
+--
+details:nvarchar(50)
+seats:integer
+}
+
+entity Booking {
+id:integer<<PK>>
+customer-id:integer<<FK>>
+table-id:integer<<FK>
+--
+bookingDate: dateTime
+startDate:dateTime
+endDate:dateTime
+}
+Restaurant ||--{ Table : one-to-many
+Table ||--{ Booking : one-to-many
+Customer ||--{ Booking : one-to-many
+
+
 @enduml
