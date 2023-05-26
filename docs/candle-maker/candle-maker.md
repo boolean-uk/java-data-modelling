@@ -10,4 +10,4 @@ A local candle maker wants to open an online store selling their handmade candle
 - As a store owner, so I can manage customer's orders, I want to know which customer made each order
 
 
-![canlde-makerERDiagram](./candle-maker.drawio.svg)
+![canlde-makerERDiagram](./er-diagram.drawio.svg)
