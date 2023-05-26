@@ -4,7 +4,7 @@
 - As the shop owner, so I can full-fill orders, I need a place to hold them.
 - c) As the shop owner, so I can see who is buying from me, I need to keep a tab for my customers.
 
-
+![candle shop entity diagram](./Images/candleShop.png)
 
 ##
 
@@ -14,3 +14,4 @@
 - As the restaurant owner, so I can see who is booking tables, I need to hold bookers information.
 - As the restaurant owner, so I can see which tables are booked, I need to hold information about bookings.
 
+![restaurant entity diagram](./Images/restaurant.png)
