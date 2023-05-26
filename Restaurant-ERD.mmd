@@ -1,0 +1,28 @@
+erDiagram
+    BOOKING {
+        int booking_id PK
+        int customer_id FK
+        int table_id FK
+        int timeslot_id FK
+        int numberofpeople
+    }
+    CUSTOMERS {
+        int customer_id PK
+        varchar(50) name
+        varchar(50) phone
+        varchar(50) email
+    }
+    TABLES {
+        int table_id PK
+        int number
+        int size
+    }
+    TIMESLOTS {
+        int timeslot_id PK
+        datetime startdate
+        datetime enddate
+    }
+
+    CUSTOMERS ||--|{ BOOKING : has
+    TABLES ||--|{ BOOKING : has
+    TIMESLOTS ||--|{ BOOKING : has
