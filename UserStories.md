@@ -36,7 +36,7 @@
 - As the blog manager, so that i can keep track of the site's popularity, i want people to be able to create an account.
 - As the blog manager, to draw the attention of more people, i want people to be able to post things.
 - As the blog manager, to make people visit frequently, i want people to be able react to posts.
-- As the blog manager, to control and prevent harrassment, i want only registered people to be able to react on posts.
+- As the blog manager, to control and prevent harassment, i want only registered people to be able to react on posts.
 
 ![blog entity diagram](./Images/Blog.svg)
 
@@ -46,7 +46,7 @@
 - As an online learning system manager, so i can make money, i want students to be able to register.
 - As an online learning system manager, to draw the attention of students, i want them to choose from a variety of courses.
 - As an online learning system manager, to increase the popularity of the platform, i want people to make comments on the subject that is being taught.
-- As an online learning system manager, to make students feel confortable, i want to have many rooms.
+- As an online learning system manager, to make students feel comfortable, i want to have many rooms.
 - As an online learning system manager, to make satisfy the needs of all students, i want to have many teachers for the course.
 - As an online learning system manager, to avoid students quiting some courses, i want them to be able to change rooms.
 
