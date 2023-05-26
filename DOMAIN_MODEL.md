@@ -1,5 +1,37 @@
 <p>
 
+### Exercise 1
+
+
+#### User stories
+
+1. As a customer, I want to order candles and other artifacts from the local candle maker.
+2. As an owner of a candle maker store, I want to keep track of all orders and customers that use my online store
+3. As an owner of a candle maker store, I want all detailed information about a specific product or customer.
+4. As an owner of a candle maker store, I want to update any information regarding a product.
+
+#### Entity Relationship Diagram
+
+![exercise1-uml.png](assets%2Fexercise1-uml.png)
+
+</p>
+
+<p> 
+### Exercise 2
+
+#### User stories
+1. As a customer, I want to book a table for my favourite restaurant.
+2. As a customer, when booking I want to specify how many people our group will consist of.
+3. As the restaurant's manager, I want to know the name and the phone number of each customer who does a reservation, and keep a detailed account of all reservations.
+4. As the restaurant's manager, I want the customer to specify when they will arrive.
+5. As a customer, I want to be able to book any available table that our group can fit at.
+
+
+#### Entity Relationship Diagram
+
+![exercise2-uml.png](assets%2Fexercise2-uml.png)
+</p>
+<p>
 ### Exercise 3
 
 #### User Stories
@@ -31,5 +63,5 @@
 
 #### Entity Relationship Diagram
 
-![](assets/exerice4-uml.png)
+![](assets/exercise4-uml.png)
 </p>
