@@ -1,5 +1,6 @@
 <p>
-3. A University library wishes to implement an online system for borrowing books and other items from the library. Each user will be able to borrow up to 6 items at a time.
+
+### Exercise 3
 
 #### User Stories
 
