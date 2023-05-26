@@ -1,5 +1,6 @@
 erDiagram
     PRODUCT {
+        int product_id PK
         varchar(50) name
         int price
         int stock
@@ -10,11 +11,13 @@ erDiagram
         int productquantity
     }
     ORDERS {
+        int order_id PK
         int customer_id FK
         datetime orderdate
         datetime deliverydate
     }
     CUSTOMER {
+        int customer_id PK
         varchar(50) name
         varchar(50) address
         varchar(50) phone

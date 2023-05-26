@@ -1,14 +1,18 @@
 erDiagram
     COURSES {
+        int course_id PK
         varchar(50) name
     }
     TEACHERS {
+        int teacher_id PK
         varchar(50) name
     }
     STUDENTS {
+        int student_id PK
         varchar(50) name
     }
     ROOMS {
+        int room_id PK
         int number
     }
     STUDENTCOURSES {
@@ -21,6 +25,7 @@ erDiagram
         int timeslot_id FK
     }
     TIMESLOTS {
+        int timeslot_id PK
         datetime startdate
         datetime enddate
     }
