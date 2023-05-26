@@ -13,6 +13,7 @@
 '  * mandatory_attribute
 '  optional_attribute
 '}
+title Candle Maker
 entity Customer{
 *id:Integer<<PK>>
 --
