@@ -76,9 +76,11 @@
 2. As a student of the online system, I want to set up my account with my email and password, then log in to my account using either my username or email, and password.
 3. As the manager of the online system, I want to keep a detailed account of all courses and update some of their information.
 4. As a student, I want to enroll in courses.
-5. As a teacher of the online system, I want to take attendance in the courses that i teach.
+5. As a teacher of the online system, I want to take attendance in the courses that I teach.
 6. As the manager of the online system, I want to change who teaches each course.
 
 #### Entity Relationship Diagram
+
+![exercise5-uml.png](assets%2Fexercise5-uml.png)
 
 </p>
