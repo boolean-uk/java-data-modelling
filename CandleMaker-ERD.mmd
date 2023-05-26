@@ -1,0 +1,26 @@
+erDiagram
+    PRODUCT {
+        varchar(50) name
+        int price
+        int stock
+    }
+    PRODUCTORDERS {
+        int product_id FK
+        int order_id FK
+        int productquantity
+    }
+    ORDERS {
+        int customer_id FK
+        datetime orderdate
+        datetime deliverydate
+    }
+    CUSTOMER {
+        varchar(50) name
+        varchar(50) address
+        varchar(50) phone
+        varchar(50) email
+    }
+
+    PRODUCT ||--|{ PRODUCTORDERS : has
+    ORDERS ||--|{ PRODUCTORDERS : has
+    ORDERS }|--|| CUSTOMER : has
