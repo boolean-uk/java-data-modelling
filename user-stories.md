@@ -1,0 +1,9 @@
+- As a customer, so I can have a place to stay tomorrow night, I want to book a room at the hotel.
+- As the hotel owner, so I can expand my business, I want to add new rooms to the hotel.
+- As a customer, so I can book a room, I have to provide my personal information
+- As a customer, so I can be sure I booked my room, I have to pay some or all of the money.
+- As a customer, so I can be sure that the room is paid, I want a receipt of my room payment, via email.
+- As the hotel owner, so I can manage the bookings, I want to view a list of all room bookings.
+- As the hotel owner, so I can enchain the room, I want to have access to the payments of the customers.
+- As the hotel owner, so the procedure to be succeeded, I have to send a confirmation email at the customer.
+- As the hotel owner, so I can manage the rooms, I want to have a list of the available rooms.
