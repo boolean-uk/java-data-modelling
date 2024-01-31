@@ -1,0 +1,18 @@
+Epic
+
+A University library wishes to implement an online system for borrowing books and other items from
+the library. Each user will be able to borrow up to 6 items at a time.
+
+---------------------------------------------------------------------------------------------------
+
+User Stories
+
+    - As a user, I want to be able to see on my account how many items I am currently loaning.
+
+    - As a user, I want to be able to loan a book only to pick it up at the library later.
+
+    - As a library manager, I want to be able to see if an item is being loaned or not.
+
+    - As a librarian, I want to be able to change information for an item if needed.
+
+    - As a librarian, I want to be able to add items that are available to loan out to user.
