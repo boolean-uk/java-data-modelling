@@ -30,6 +30,10 @@ Push your repo once you have completed the activities and create a Pull Request 
 
 Design a simplified booking system for this epic.
 
+#### Entity Relationship Diagram Core
+
+![Core](Core.png)
+
 ## Extension Exercises
 
 Come up with User Stories (and possibly a more detailed Epic) for each of the following scenarios. 
@@ -38,7 +42,7 @@ Then design the database tables and relationships which would be needed to imple
 
 1. A local candle maker wants to open an online store selling their handmade candles and other artifacts, they need a database system to use as part of this online shop. Details of customers need to be stored, products need to be stored and updated, a record of customer orders also needs to be maintained. Design the database system for the Candle Shop.
 
-2. A car hire compnay with multiple locations wants to design an online system that will allow customers to book various cars, on various dates from different locations. Design the database system that would allow them to effectively manage their business.
+2. A car hire company with multiple locations wants to design an online system that will allow customers to book various cars, on various dates from different locations. Design the database system that would allow them to effectively manage their business.
 
 3. A University library wishes to implement an online system for borrowing books and other items from the library. Each user will be able to borrow up to 6 items at a time.
 
@@ -46,3 +50,49 @@ Then design the database tables and relationships which would be needed to imple
 
 5. Think about an online learning system as used by a school, a university or a coding bootcamp, design the database tables etc that might be required to implement such a system.
 
+### Extension 1: Candle Shop
+
+#### User Stories
+- As the candle maker, so that I can make money of my candle making hobby, I want to be able to sell my homemade stuff to a larger audience with an online shop.
+- As a customer, so that I can order homemade candles, I want to be able to buy a specific amount of each artifact.
+- As the candle maker, so that customers don't place orders of artifacts not in stock, I want the list of products to be updated.
+- As the candle maker, so that I know which order belongs tho which customer, I want the order to include the customer.
+
+#### Entity Relationship Diagram
+
+![Extension 1](Extension1.png)
+
+### Extension 2: Car Rental
+
+#### User Stories
+- As a car hire manager, so that I can manage my car park, I want a booking to include a car, date and location.
+- As a customer, so that I can bring the baggage I need, I want to be able to rent cars of different sizes.
+
+#### Entity Relationship Diagram
+
+![Extension 2](Extension2.png)
+
+### Extension 3: Library
+
+#### User Stories
+- As a librarian, so that my library don't run out of books, I want the users to be able to borrow up to 6 items at a time.
+- As a user of the library, so that I can read a good book during my vacation, I want to reserve a book ahead of time.
+- As a librarian, so that I can keep track of different borrowings, I want to know which user have borrowed the item and for how long the item is unavailable for further loans.
+- As a librarian, so that as many people as possible get the opportunity to borrow a specific book, I want every borrowing to have a submission deadline.
+
+#### Entity Relationship Diagram
+
+![Extension 3](Extension3.png)
+
+### Extension 4: Micro-blogging Site
+
+#### User Stories
+- As a user, so that I can express myself on a micro-blogging site, I want to create posts.
+- As a user, so that I can find out how popular I am, I want to be able to see how many likes my posts have gotten.
+- As a user, so that I can discuss posts, I want to be able to make comments to posts.
+- As a user, so that I can keep track of what my friends posts about, I want to be able to follow other users.
+- As a user, so that I can save a post I thought was great for later, I want to favorite the post.
+
+#### Entity Relationship Diagram
+
+![Extension 4](Extension4.png)
