@@ -25,6 +25,7 @@ Push your repo once you have completed the activities and create a Pull Request 
 #### User Stories
 - As a customer, so I can have a meal tomorrow night, I want to book a table at the restaurant.
 - As the restaurant owner so that I can manage my business effectively I want to be able to alter the number of tables available at a given time.
+- As a customer, so I can bring my friends, I want to book a table with chairs for all of us
 
 Design a simplified booking system for this epic.
 
