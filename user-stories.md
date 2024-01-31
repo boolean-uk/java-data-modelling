@@ -52,3 +52,23 @@ available.
 ```
 ### 3. University Library
 
+```
+As a book borrower of the library, to know what I'm getting into,
+I want to see the genre of the book.
+```
+
+```
+As a loaner, to satisfy my greed, I want to be able
+to borrow several items in one loan.
+```
+
+```
+As a book enthusiast, to find type of books to my liking,
+I want to know if the books are hardback.
+```
+
+```
+As a librarian, to keep order intact, one can only loan up to
+6 books at once.
+```
+
