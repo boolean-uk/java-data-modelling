@@ -1,0 +1,19 @@
+Epic
+
+A car hire company with multiple locations wants to design an online system that will allow
+customers to book various cars, on various dates from different locations. Design the database
+system that would allow them to effectively manage their business.
+
+---------------------------------------------------------------------------------------------------
+
+User Stories
+
+    - As a customer, I want to be able to reserve a car several days in advance.
+
+    - As a company manager, I want to be to see when a customer gets and returns a car.
+
+    - As a company manager, I want to be able to add a location as my business grows.
+
+    - As a customer, I want to see the available cars and locations.
+
+    - As a company manager, I want to be able to add new cars as they are purchased.
