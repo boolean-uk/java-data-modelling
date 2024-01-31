@@ -7,9 +7,8 @@ Customer booking is for a number of people, which is then assigned one to multip
 
 # Extension Exercises
 ## Candle Maker
-```
 A local candle maker wants to open an online store selling their handmade candles and other artifacts, they need a database system to use as part of this online shop. Details of customers need to be stored, products need to be stored and updated, a record of customer orders also needs to be maintained. Design the database system for the Candle Shop.
-```
+
 ### User Stories
 ```
 1. 
@@ -33,9 +32,8 @@ I want my orders to be saved so that i can see them again later
 
 
 ## Car Hire Company
-```
 A car hire compnay with multiple locations wants to design an online system that will allow customers to book various cars, on various dates from different locations. Design the database system that would allow them to effectively manage their business.
-```
+
 ### User Stories
 ```
 1. 
@@ -59,9 +57,8 @@ I want there to be multiple cars available for driving
 
 
 ## University Library
-```
 A University library wishes to implement an online system for borrowing books and other items from the library. Each user will be able to borrow up to 6 items at a time.
-```
+
 ### User Stories
 ```
 1. 
@@ -88,9 +85,8 @@ Assumption:
 
 
 ## Online Learning
-```
 Think about an online learning system as used by a school, a university or a coding bootcamp, design the database tables etc that might be required to implement such a system.
-```
+
 ### User Stories
 ```
 1. 
