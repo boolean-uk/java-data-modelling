@@ -50,9 +50,10 @@ erDiagram
     User ||--o{ Post : "posts"
     User ||--o{ Comment : "makes"
     Post ||--o{ Comment : "has"
+    Post ||--o{ Like : "has"
     User ||--o{ Follow : "followed_by"
     User ||--o{ Block : "blocked_by"
     User ||--o{ Like : "does"
-    Post ||--o{ Like : "has"
+
 
 ````
