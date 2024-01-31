@@ -1,0 +1,44 @@
+---
+title: Library System
+---
+erDiagram
+    Library ||--o{ Book : has
+    Book ||--o{ Genre : has
+    Book ||--o{ Type : has
+
+    User ||--o{ Borrowed : has
+    Book ||--|| Borrowed : is
+
+    Library {
+        Text name
+        Text adress
+    }
+
+    Book {
+        Text ISBN PK
+        Text genre FK
+        Text type FK
+        Text title
+        Text author
+        boolean onLoan
+        TimeStamp createdAt
+    }
+
+    Genre {
+        Text genre
+    }
+
+    Type {
+        Text type
+    }
+
+    User {
+        int userId
+        int borrowedBooks
+    }
+
+    Borrowed {
+        int borrowId
+        Text userId FK
+        Text ISBN FK
+    }

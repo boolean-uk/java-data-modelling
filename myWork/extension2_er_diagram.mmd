@@ -1,0 +1,49 @@
+---
+title: Car Hire Company
+---
+
+erDiagram
+
+    Customer ||--o{ Rental : has
+    Rental ||--|| Vehicle : has
+    Rental }o--|| RentalOffice : at
+    Vehicle }o--|| RentalOffice : has
+    Vehicle ||--|| VehicleType : is
+    Vehicle ||--|| VehicleModel : is
+    RentalOffice ||--|| Locations : in
+    Customer{
+        int customerId PK
+        Text firstName
+        Text lastName
+        Text contactInformation
+        TimeStamp createdAt
+    }
+    Vehicle{
+        int vehicleId PK
+
+        Text vehicleType FK
+        Text vehicleModel FK
+    }
+    Rental{
+        int rentalId PK
+        int customerId FK
+        int officeId FK
+        LocalDate startDate
+        LocalDate endDate
+        TimeStamp createdAt
+    }
+    RentalOffice{
+        int officeId PK
+        Text location FK
+    }
+    Locations{
+        Text location PK
+    }
+    VehicleType{
+        Text vehicleType PK
+    }
+    VehicleModel{
+        Text vehicleModel PK
+    }
+
+

@@ -1,0 +1,28 @@
+---
+title: Candle Maker
+---
+erDiagram
+    Customer ||--o{ Order : ""
+    Product }o--o{ Order : ""
+    Product ||--|| Category : ""
+
+    Customer{
+        int customerId PK
+    }
+    Product{
+        int productId PK
+        Text category FK
+        Text productName
+        int numberInStock
+    }
+    Category{
+        Text category PK
+    }
+    Order{
+        int orderId PK
+        int customerId  FK
+        boolean complete
+        TimeStamp createdAt
+    }
+
+
