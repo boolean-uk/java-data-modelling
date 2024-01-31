@@ -1,4 +1,4 @@
-#Core User Stories 
+# Core User Stories 
 
 ```
 - As a customer, so I can have a meal tomorrow night, I want to book a table at the restaurant.
