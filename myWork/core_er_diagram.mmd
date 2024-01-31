@@ -1,0 +1,64 @@
+---
+title: Restaurant Booking System
+---
+erDiagram
+    Customer ||--o{ Booking : ""
+    Manager ||--o{ Unavailable : ""
+
+
+    Restaurant ||--o{ Manager : ""
+    Restaurant ||--o{ Room : ""
+    Room ||--o{ Table : ""
+    Table ||--o{ Booking : ""
+    Table ||--o{ Unavailable : ""
+
+    Customer{
+        int customerId PK
+        Text firstName
+        Text lastName
+        Text phoneNumber
+    }
+
+    Manager{
+        int managerId
+        Text firstName
+        Text lastName
+    }
+
+    Restaurant{
+        int restaurantId PK
+        Text name
+    }
+
+    Room{
+        Text roomId PK
+        int restaurantId FK
+        Text name
+    }
+
+    Table{
+        int tableId PK
+        int roomId FK
+        int tableNumber
+        int tableCapacity
+    }
+
+    Booking{
+        int customerId FK, PK
+        int tableId FK, PK
+        LocalDate date
+        LocalTime startTime
+
+    }
+
+    Unavailable{
+        int unavailableId PK
+        int managerID FK
+        int tableId FK
+        boolean indefinite
+        LocalDate startDate
+        LocalTime startTime
+        LocalDate endDate
+        LocalTime endTime
+    }
+
