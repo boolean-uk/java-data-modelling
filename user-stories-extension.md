@@ -41,4 +41,5 @@
 - As an individual, so I can make my experience more personal, I want to customize my profile to suit my personality
 - As an individual, so I can feel comfortable, I want to block users who are mean to me
 - As a troll, so I can have meaningless arguments online, I want to be able to comment on another user's post
+- As an individual, so I can keep up with my favorite people, I want to follow other accounts
 ````
