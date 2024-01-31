@@ -21,6 +21,11 @@ I could see how many items are left per item.
 ## 2. The Rental Car Service
 
 ```text
+As the owner, So I can avoid legal trouble. I would like to know that I do not rent out to a child.
+In other words, I require the customer to have a valid drivers license.
+```
+
+```text
 As a customer I, so that I don't have to walk too far. It would be nice if the nearest
 location of a rental car was on my receipt.
 ```
@@ -43,4 +48,7 @@ As a lender I want to see what books are lended out and to which student.
 
 ```text
 As a student I want to know when I have to return the book.
+```
+```text
+As a lender I would like to know how loyal each student is, in terms of returning books. 
 ```
