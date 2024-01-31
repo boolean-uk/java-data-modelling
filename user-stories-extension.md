@@ -20,4 +20,13 @@
 - As a manager, so I don't disappoint my customers, I want to keep track of what cars are booked and not
 - As a customer, so I can feel better about myself, I want to choose an electric car for my booking
 - As a customer, so I know I can drive the car, I want to book a car with automatic transmission
+
+
+3.
+        A University library wishes to implement an online system for borrowing books and other items from the library. 
+        Each user will be able to borrow up to 6 items at a time.
+- As a student, so I can learn something new, I want to make a reservation for a book
+- As a librarian, so there are always books available, I want to only allow someone to borrow 6 books at a time
+- As a librarian, so I know what books I have, I want to keep track of which books are borrowed
+- As a student, so I don't have to pay, I want to know how long I can borrow a book for
 ````
