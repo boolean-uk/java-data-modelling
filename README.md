@@ -28,6 +28,7 @@ Push your repo once you have completed the activities and create a Pull Request 
 
 Design a simplified booking system for this epic.
 
+
 ## Extension Exercises
 
 Come up with User Stories (and possibly a more detailed Epic) for each of the following scenarios. 
