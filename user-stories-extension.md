@@ -29,4 +29,16 @@
 - As a librarian, so there are always books available, I want to only allow someone to borrow 6 books at a time
 - As a librarian, so I know what books I have, I want to keep track of which books are borrowed
 - As a student, so I don't have to pay, I want to know how long I can borrow a book for
+
+4.
+        When they originally launched Social Media sites such as Twitter, Identica, Diaspora and Mastodon all 
+        described themselves as micro-blogging sites, design a database schema for a similar micro-blogging 
+        Social Media site.
+- As an individual, so I can keep nice memories, I want to make a post about my day
+- As an influenser, so my sponsors know I'm worth sponsoring, I want to know how many likes my posts get
+- As an administrator, so our platform is as safe as possible, I want to disable accounts who break the site's rules
+- As an individual, so I can support my friends, I want to share their posts on my profile
+- As an individual, so I can make my experience more personal, I want to customize my profile to suit my personality
+- As an individual, so I can feel comfortable, I want to block users who are mean to me
+- As a troll, so I can have meaningless arguments online, I want to be able to comment on another user's post
 ````
