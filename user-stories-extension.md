@@ -18,4 +18,6 @@
 - As a customer, so I can include everyone, I want to book a car with enough seats to fit my family
 - As a customer, so I can go shopping, I want to book a car with more cargo space
 - As a manager, so I don't disappoint my customers, I want to keep track of what cars are booked and not
+- As a customer, so I can feel better about myself, I want to choose an electric car for my booking
+- As a customer, so I know I can drive the car, I want to book a car with automatic transmission
 ````
