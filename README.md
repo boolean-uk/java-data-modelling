@@ -20,7 +20,9 @@ Push your repo once you have completed the activities and create a Pull Request 
 
 #### Epic
 
-”A restaurant wants to introduce an online booking system for their main dining room, which has various tables. The restaurant is open throughout the day so customers can book for a variety of times and dates for different size groups."
+”A restaurant wants to introduce an online booking system for their main dining room, which has various tables. 
+The restaurant is open throughout the day so customers can book for a variety of times and dates for
+different size groups."
 
 #### User Stories
 - As a customer, so I can have a meal tomorrow night, I want to book a table at the restaurant.
