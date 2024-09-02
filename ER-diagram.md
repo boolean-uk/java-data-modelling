@@ -224,4 +224,10 @@ erDiagram
         String name
         String email
     }
+    TEACHER ||--o{ GRADE : handles
+    GRADE {
+        int studentId FK
+        int courseId FK
+        String grade
+    }
 ```
