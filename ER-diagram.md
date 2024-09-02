@@ -77,3 +77,49 @@ erDiagram
     }
     
 ```
+
+### 2. Car Hire Company
+#### User Stories
+- As a customer, so I can go for a trip with my family, I want to hire a car in my hometown.
+- As a customer, so I don't need to bring my own car to my vacation, I want to know if there is a car available nearby my hotel.
+- As the Car Company owner, so that I can manage my business effectively I want to be able to manage the hourly price for renting a specific car model.
+
+```mermaid
+---
+    title: Rent A Car Service
+---
+erDiagram
+    CUSTOMER ||--o{ BOOKING : places
+    CUSTOMER {
+        int customerId PK
+        string name
+        string email
+    }
+    BOOKING ||--|| CAR : contains
+    BOOKING {
+        int bookingID PK
+        LocalDateTime bookingCreatedDate
+        LocalDateTime startDateTime
+        localDateTime endDateTime
+        int carId FK
+        int customerId FK
+    }
+    CAR {
+        int carId PK
+        String model
+        int year
+        boolean isAvailable
+        int locationId FK
+    }
+    LOCATION ||--|| CAR : associated
+    LOCATION {
+        int locationId PK
+        String adress
+    }
+    CAR }|--|| PRICE_TABLE : associated
+    PRICE_TABLE {
+        String model FK
+        int year FK
+        double hourlyPrice
+    }
+```
