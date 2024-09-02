@@ -31,3 +31,13 @@
 - As a library manager, so that the visitors do not over-borrow, I would like to view how many borrowed items the visitors currently have and make sure they do not borrow more than 6 items simultaneously.
 
 ![univeristylibrary](imgs/unilibrary.jpg)
+
+## Social media
+
+"When they originally launched Social Media sites such as Twitter, Identica, Diaspora and Mastodon all described themselves as micro-blogging sites, design a database schema for a similar micro-blogging Social Media site."
+
+- As a user, so that I can keep update my followers, I would like to make status posts.
+- As a user, so that I can share my ideas on a post, I would like to be able to comment on a post.
+- As a user, so that I can share my reactions to a post, I would like to make a reaction to a post (like, laugh, or love).
+
+![socialmedia](imgs/socialmedia.jpg)
