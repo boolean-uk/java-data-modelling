@@ -1,0 +1,50 @@
+Extension 1
+
+Epic
+A local candle maker wants to open an online store to sell their handmade candles and other artifacts.
+The system should allow customers to browse products, place orders, and manage their accounts.
+The candle maker should be able to manage product listings and track orders.
+
+User Stories
+As a customer, I want to create an account so that I can place orders and track my purchases.
+As a customer, I want to browse products so that I can choose items to buy.
+As a customer, I want to place an order so that I can purchase candles and artifacts.
+As a customer, I want to view my order history so that I can see my past purchases.
+As the candle maker, I want to add, update, and delete products so that I can manage my inventory.
+As the candle maker, I want to view all orders so that I can fulfill them.
+
+
+Extension 2
+
+Epic
+A car hire company with multiple locations wants to design an online system that will allow
+customers to book various cars on various dates from different locations.
+The system should allow customers to create accounts, browse available cars, make bookings,
+and manage their reservations. The company should be able to manage car listings, track bookings, and manage locations.
+
+User Stories
+As a customer, I want to create an account so that I can book cars and manage my reservations.
+As a customer, I want to browse available cars so that I can choose a car to hire.
+As a customer, I want to book a car for specific dates and locations so that I can use it for my travel needs.
+As a customer, I want to view and manage my bookings so that I can make changes or cancellations if needed.
+As the car hire company, I want to add, update, and delete car listings so that I can manage my carpool.
+As the car hire company, I want to view all bookings so that I can track reservations.
+As the car hire company, I want to manage multiple locations so that I can offer cars from different places.
+As the car hire company, I want to be able to alter the availability of cars so that I can manage bookings effectively.
+
+
+Extension 3
+
+Epic
+A University library wishes to implement an online system for borrowing books and other items
+from the library. The system should allow users to create accounts, browse available items,
+borrow items, and manage their borrowed items. The library staff should be able to manage
+item listings, track borrowed items, and enforce borrowing limits.
+
+User Stories
+As a user, I want to create an account so that I can borrow items from the library.
+As a user, I want to browse available items so that I can choose items to borrow.
+As a user, I want to view and manage my borrowed items so that I can return them on time.
+As library staff, I want to add, update, and delete item listings so that I can manage the library's inventory.
+As library staff, I want to view all borrowed items so that I can track which items are currently out.
+As library staff, I want to enforce borrowing limits so that users can only borrow up to 6 items at a time.
