@@ -22,3 +22,12 @@
 - As a customer, so that I can choose a car that fits my needs, I would like to be able to choose between various cars to book.
 
 ![carhire](imgs/carhire.jpg)
+
+## University library
+
+"A University library wishes to implement an online system for borrowing books and other items from the library. Each user will be able to borrow up to 6 items at a time."
+
+- As a library visitor, so that I do not have to buy anything, I would like to make a reservation for borrowing books and other items.
+- As a library manager, so that the visitors do not over-borrow, I would like to view how many borrowed items the visitors currently have and make sure they do not borrow more than 6 items simultaneously.
+
+![univeristylibrary](imgs/unilibrary.jpg)
