@@ -123,3 +123,33 @@ erDiagram
         double hourlyPrice
     }
 ```
+### 3. University Library
+#### User Stories
+- As a user, so I borrow books, I want to see available books.
+- As the Library administrator, so that I can manage the loans effectively, I want to be able to update the max number of books users can borrow.
+
+```mermaid
+---
+    title: Library books and loans
+---
+erDiagram
+    USER ||--o{ LOAN : requests
+    USER {
+        int customerId PK
+        string name
+        string email
+        int currentNumOfLoans "Max number 6"
+    }
+    LOAN ||--|{ BOOK : contains
+    LOAN {
+        int loanID PK
+        int bookId FK
+        int userId FK
+    }
+    BOOK {
+        int bookId PK
+        String title
+        int numOfPages
+        boolean isAvailable
+    }
+```
