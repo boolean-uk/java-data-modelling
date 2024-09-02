@@ -1,0 +1,31 @@
+As a user,
+So that my friends and family can stay updated on my activities,
+I want to be able to create and share posts.
+
+As a user,
+So that I can view the activity of my friends,
+I want to be able to other peoples posts.
+
+As a user,
+So that I can recreate my network on friends and family online,
+I want to add be able to add and remove friends on the platform.
+
+As a user,
+So that I can promote my privacy online,
+I want to be able to impose restrictions on who can see my posts.
+
+As a user,
+So I can provide feedback to friends and family on their posts,
+I want to be able to comment and react to posts.
+
+As a user,
+So that I can keep track of the engagement to my posts,
+I want to be able to see all the comments and reactions made on my posts.
+
+As a user,
+So I can quantify my popularity online,
+I want to be able to see how many people have seen my post.
+
+As a user,
+So I remember the birthdays of my friends and family,
+I want the application to notify my friends when it is my birthday.

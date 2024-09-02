@@ -1,0 +1,3 @@
+When they originally launched Social Media sites such as
+Twitter, Identica, Diaspora and Mastodon all described themselves as micro-blogging sites,
+design a database schema for a similar micro-blogging Social Media site.
