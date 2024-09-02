@@ -12,3 +12,9 @@ Extension 2
 2. As a custonmer, I want to modifify or cancel my reservation, if possible.
 3. As a customer, I want to make online purchases.
 4. As the owner, I want to maintain the cars. 
+
+Extension 3
+1. As a customer, I want to search and borrow books and other types of items from the library.
+2. As a customer I want to be able to see whether an item is available for borrowing.
+3. As a customer, If I want to I can borrow up to 6 items.
+4. As the owner, I want to see the iventory. 
