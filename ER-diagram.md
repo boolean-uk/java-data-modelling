@@ -193,7 +193,7 @@ erDiagram
 
 ```mermaid
 ---
-    title: Micro-blogging
+    title: Online Learning
 ---
 erDiagram
     STUDENT ||--|| ENROLLED : is
