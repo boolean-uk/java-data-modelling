@@ -135,7 +135,7 @@ erDiagram
 erDiagram
     USER ||--o{ LOAN : requests
     USER {
-        int customerId PK
+        int userId PK
         string name
         string email
         int currentNumOfLoans "Max number 6"
