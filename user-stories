@@ -1,0 +1,18 @@
+Candle:
+As a customer i want to be able to order candles to my address
+
+As a customer i want to be able to order multiple candles at once
+
+As a owner i want to be able to view when orders have been made
+
+Car:
+As a owner i want to know what location a car was rented from.
+
+As a custommer i want to be able to book multiple cars.
+
+As a custommer i want to be able to know the make, model and year of the car im renting.
+
+Library:
+As a librarian i want to be able to change the limit of the amount of items a user can borrow.
+
+As a user i want to be able to borrow a book for a set amount of time.
