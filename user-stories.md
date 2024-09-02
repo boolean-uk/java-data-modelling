@@ -4,7 +4,7 @@
 
 ## Extension 2
 - As a customer, so I can order the car I want, I want to have a big selection of cars.
-- As a amanger, so I can maximize sales, I want to have multiple locations.
+- As a manager, so I can maximize sales, I want to have multiple locations.
 
 ## Extension 3
 - As a student, so I can read relevant source material, I want to be able to borrow books from the university library.
