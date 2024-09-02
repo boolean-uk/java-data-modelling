@@ -11,3 +11,4 @@ Extension 2
 1. As a customer, I want to search and book for available cars in a specific location for a specific date.
 2. As a custonmer, I want to modifify or cancel my reservation, if possible.
 3. As a customer, I want to make online purchases.
+4. As the owner, I want to maintain the cars. 
