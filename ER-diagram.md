@@ -153,3 +153,34 @@ erDiagram
         boolean isAvailable
     }
 ```
+
+### 4. Social Media Site
+#### User Stories
+- As a user, so I can see what my friends are doing, I want to see my personal feed.
+- As the Site owner, so that I can manage the business effectively, I want to be able to decide what a user will see in the personal feed.
+
+```mermaid
+---
+    title: Micro-blogging
+---
+erDiagram
+    USER ||--|| PERSONAL_FEED : shows
+    USER {
+        int userId PK
+        string name
+        string email
+        LocalDateTime memberSince
+    }
+    PERSONAL_FEED ||--|{ BLOG_POST : contains
+    BLOG_POST {
+        int blogId PK
+        LocalDateTime dateTimeCreated
+        String text "Max number of characters are 150"
+        int userId FK
+    }
+    BLOG_POST ||--|{ FRIEND : where
+    FRIEND {
+        int userID FK
+        int friendId FK
+    }
+```
