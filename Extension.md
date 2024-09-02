@@ -7,7 +7,7 @@
  - As a store owner, I want to get a customers name, shipping address, and ID.
 
 
-![Candle Shop](CandleShop.drawio.png)
+![Candle Shop](./CandleShop.drawio.png)
 
 
 ## Extension 2
@@ -19,7 +19,7 @@
 
 
 
-![Car Company](CarCompany.drawio.png)
+![Car Company](./CarCompany.drawio.png)
 
 
 
@@ -32,4 +32,4 @@
  - As a teacher, I want to grade the paper from F-A.
  - As a student, I want to see what grade I got on my paper.
 
-![Learning System](LearningSystem.drawio.png)
+![Learning System](./LearningSystem.drawio.png)
