@@ -41,3 +41,9 @@
 - As a user, so that I can share my reactions to a post, I would like to make a reaction to a post (like, laugh, or love).
 
 ![socialmedia](imgs/socialmedia.jpg)
+
+## School course system
+
+"Think about an online learning system as used by a school, a university or a coding bootcamp, design the database tables etc that might be required to implement such a system."
+
+![coursesystem](imgs/coursesystem.jpg)
