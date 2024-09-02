@@ -184,3 +184,44 @@ erDiagram
         int friendId FK
     }
 ```
+
+### 5. Online Learning
+#### User Stories
+- As a student, so I can get access to the course material, I want to see when I'm enrolled in a course.
+- As a head teacher, so that I can manage the school effectively, I want to see the teacher responsible for different courses.
+- As a teacher, so that I can give feedback to students, I want to be able to grade students en every course I'm responsible for.
+
+```mermaid
+---
+    title: Micro-blogging
+---
+erDiagram
+    STUDENT ||--|| ENROLLED : is
+    STUDENT {
+        int studentId PK
+        string name
+        string email
+    }
+    ENROLLED {
+        int studentId FK
+        int courseId FK
+        boolean isEnrolled
+    }
+    ENROLLED ||--|{ COURSE : contains
+    COURSE {
+        int courseId PK
+        String title
+        String subject
+    }
+    TEACHER }|--o{ COURSE_RESPONSIBILITIES : associatedTo
+    COURSE_RESPONSIBILITIES ||--|{ COURSE : contains
+    COURSE_RESPONSIBILITIES {
+        int teacherID FK
+        int courseId FK
+    }
+    TEACHER {
+        int teacherID FK
+        String name
+        String email
+    }
+```
