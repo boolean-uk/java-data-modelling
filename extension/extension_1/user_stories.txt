@@ -1,0 +1,23 @@
+As a user,
+So that I can drive from point A to point B without owning a car,
+I want to be able to rent a car.
+
+As a user,
+To facilitate one way rental,
+I want to be able to deliver the car at another location than where I picked it up.
+
+As a user,
+So I can choose the car I like best,
+I want to be able to see all the available cars at a given location.
+
+As a user,
+So that I avoid having to repeat the process each time I rent a car,
+I want to be able to store my credit card and driver's license information.
+
+As a user,
+So I can choose the car that suits my needs,
+I want to be able to see the number of seats of each car that I can rent.
+
+As a location manager,
+So I can make sure that I have a sufficient amount of cars in the stock,
+I want to see a list of the cars at my location.

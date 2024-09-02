@@ -1,0 +1,39 @@
+As a user,
+So that I can read books without having to buy them,
+I want to be able to rent books from the library.
+
+As a user,
+So that I can see if the library has the book I am looking for,
+I want to be able to search for the books using information such as title, author and ISBN.
+
+As a user,
+So that I can find the book I am looking for in the library,
+I want to be able to see the shelf number where the book is located.
+
+As a user,
+So that I avoid looking for a book that is rented out,
+I want to be able to see if a book is currently rented out.
+
+As a user,
+So that I can rent the book when it is returned to the library,
+I want to be able to join a waiting list.
+
+As a manager,
+To make sure that there are enough books for everyone,
+I want to keep track of how many books each user are currently renting.
+
+As a manager,
+So that the books are not rented indefinitely,
+I want the rental to be time restricted.
+
+As a manager,
+So that I can remind the renters to return a book if it is past due,
+I want to be able to contact the renter by email.
+
+As a manager,
+So that children can not rent age inappropriate books,
+I want an age validation to be performed when books are rented out.
+
+As a manager,
+So that I can trace damages to a book back to a renter,
+I want the rental history to be stored.
