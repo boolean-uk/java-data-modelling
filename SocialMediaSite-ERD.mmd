@@ -1,0 +1,24 @@
+erDiagram
+
+    POSTS {
+        int post_id PK
+        int user_id FK
+        datetime dateposted
+        varchar(50) title
+        varchar(300) text
+    }
+    USER {
+        int user_id PK
+        varchar(50) name
+        varchar(50) phone
+        varchar(50) email
+        varchar(300) bio
+    }
+    FOLLOWING {
+        int followeduser_id FK
+        int followinguser_id FK
+    }
+
+    USER ||--|{ FOLLOWING : has
+    USER ||--|{ FOLLOWING : has
+    POSTS }|--|| USER : has

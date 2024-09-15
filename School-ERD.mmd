@@ -1,0 +1,38 @@
+erDiagram
+    COURSES {
+        int course_id PK
+        varchar(50) name
+    }
+    TEACHERS {
+        int teacher_id PK
+        varchar(50) name
+    }
+    STUDENTS {
+        int student_id PK
+        varchar(50) name
+    }
+    ROOMS {
+        int room_id PK
+        int number
+    }
+    STUDENTCOURSES {
+        int student_id FK
+        int course_id FK
+    }
+    ROOMCOURSES {
+        int room_id FK
+        int course_id FK
+        int timeslot_id FK
+    }
+    TIMESLOTS {
+        int timeslot_id PK
+        datetime startdate
+        datetime enddate
+    }
+
+    STUDENTS ||--|{ STUDENTCOURSES : has
+    COURSES ||--|{ STUDENTCOURSES : has
+    COURSES }|--|| TEACHERS : has
+    COURSES ||--|{ ROOMCOURSES : has
+    ROOMS ||--|{ ROOMCOURSES : has
+    TIMESLOTS ||--|{ ROOMCOURSES : has
