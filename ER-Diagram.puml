@@ -1,0 +1,178 @@
+@startuml
+'https://plantuml.com/ie-diagram#ea995898864fb0ea
+
+'Type	        Symbol
+'Zero or One	|o--
+'Exactly One	||--
+'Zero or Many	}o--
+'One or Many	}|--
+
+'entity Entity01 {
+'  * identifying_attribute
+'  --
+'  * mandatory_attribute
+'  optional_attribute
+'}
+title Candle Maker
+entity Customer{
+*id:Integer<<PK>>
+--
+name:nvarchar(50)
+contactDetails:nvarchar(50)
+}
+entity Product{
+*id:Integer<<PK>>
+--
+name:nvarchar(50)
+details:nvarchar(50)
+price:decimal
+stockLevel: integer
+}
+entity Order{
+*id:Integer<<PK>>
+*customer-id: integer <<FK>>
+--
+deliveryDetails:nvarchar(50)
+orderDate:dateTime
+}
+entity OrderLineItem{
+*id:Integer<<PK>>
+*order-id:integer <<FK>>
+--
+*quantity:integer
+}
+Customer ||--{ Order :one-to-many
+Order ||--{ OrderLineItem:one-to-many
+Product ||--|| OrderLineItem : one-to-one
+
+newpage
+title Restaurant
+entity Restaurant{
+id:integer<<PK>>
+--
+name:nvarchar(50)
+address:nvarchar(50)
+}
+
+entity Customer{
+id:integer <<PK>>
+--
+contactDetails:nvarchar(50)
+}
+entity Table{
+id:integer <<PK>>
+--
+details:nvarchar(50)
+seats:integer
+}
+
+entity Booking {
+id:integer<<PK>>
+customer-id:integer<<FK>>
+table-id:integer<<FK>
+--
+bookingDate: dateTime
+startDate:dateTime
+endDate:dateTime
+}
+Restaurant ||--{ Table : one-to-many
+Table ||--{ Booking : one-to-many
+Customer ||--{ Booking : one-to-many
+
+newpage
+title Library System
+
+entity Item{
+id:integer<<PK>>
+--
+name:nvarchar(50)
+details:nvarchar(50)
+}
+
+entity Student {
+id:integer<<PK>>
+--
+name:nvarchar(50)
+limit:integer
+}
+
+entity Booking {
+id:integer<<PK>>
+student-id:integer<<FK>>
+--
+startDate:dateTime
+endDate:dateTime
+}
+
+Student ||--{ Booking :one-to-many
+Item ||--{ Booking : one-to-many
+
+newpage
+title Micro-blogging
+
+entity User {
+id:integer <<PK>>
+--
+name:nvarchar(50)
+}
+entity Post {
+id:integer <<PK>>
+user-id:integer<<FK>>
+--
+text:nvarchar(max)
+}
+entity Comment {
+id:integer <<PK>>
+user-id:integer<<FK>>
+post-id:integer<<FK>>
+--
+text:nvarchar(50)
+}
+
+User ||--o{ Post :one-to-zero-or-many
+Post ||--o{ Comment:one-to-zero-or-many
+User ||--o{ Comment: one-to-zero-or-many
+
+newpage
+title Online learning system
+
+entity Student{
+id: integer<<PK>>
+--
+name:nvarchar(50)
+contactDetails:nvarchar(50)
+}
+entity Course{
+id:integer <<PK>>
+--
+name:nvarchar(50)
+roomLink:nvarchar(50)
+}
+entity Teacher{
+id:integer <<PK>>
+--
+name:nvarchar(50)
+}
+
+entity StudentCourse{
+id:integer <<PK>>
+student-id:integer <<FK>>
+course-id:integer <<FK>>
+--
+}
+entity TeacherCourse{
+id:integer <<PK>>
+teacher-id:integer <<FK>>
+course-id:integer <<FK>>
+--
+}
+Student ||--|{ StudentCourse
+Course ||--|{ StudentCourse
+Course ||--|{ TeacherCourse
+Teacher ||--|{ TeacherCourse
+
+
+
+
+
+@enduml
