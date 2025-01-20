@@ -1,46 +1,72 @@
-# Java Data Modelling Exercise
+# Database Design
 
 ## Learning Objectives
-- Explain that an Entity Relationship Diagram is used to visualise and define the implementation of a database
-- Use user stories to design conceptual data models
-- Use conceptual data models to design logical data models
-- Use logical data models to design physical data models
+- Identify user stories from an epic
+- Design the logical structure of a database with an Entity Relationship Diagram
+
+## Epic
+
+A local cinema wants to allow people to book tickets online to see movies that are being shown in its various screens. These tickets should be delivered to customers via email. The cinema wants to keep a record of their customers and the tickets they purchase, as well as offer a regularly updated list of movies for them to choose from. A single screen might show multiple movies a day, and even the same movie at multiple times. The cinema will expand its number of screens in the future, so the potential for growth needs to be accounted for.
 
 ## Instructions
+1. Using the epic above, extract as many user stories as you can identify. Some have already been done for you below these instructions.
 
-Fork the repo as normal.
+2. From those user stories, extract the domain entities that will be required to design the database for this cinema.
 
-Create the Entity-Relationship Diagrams using whichever tool you feel works best for you.
+3. Create an Entity Relationship Diagram based on these domain entities. To begin with, focus on the individual entities and disregard any relationships.
 
-Once you have a solution for each activity add it to this repo as an image.
+4. Every entity needs to have, as a minimum, the following attributes:
+    - `id`, which is an auto-incrementing integer Primary Key
+    - `createdAt`, which is a DateTime
+    - `updatedAt`, which is a DateTime
 
-Push your repo once you have completed the activities and create a Pull Request as normal.
+5. Consider the potential relationships between each entity and implement them into your diagram
 
-## Core Exercise - Restaurant Booking System
+## Requirements
+- You should have *at least* 6 entities in your finished diagram
+- Each entity should have *at least* the minimum required attributes
+- Each entity should have the appropriate relations
 
-#### Epic
+## Delivery
 
-”A restaurant wants to introduce an online booking system for their main dining room, which has various tables. The restaurant is open throughout the day so customers can book for a variety of times and dates for different size groups."
+1. Fork this repository and clone the fork to your machine.
+2. Add your user stories to [user-stories.md](./user-stories.md).
+2. Add a picture of your diagram. You can use whichever tool you like, here are some examples:
+    1. [Miro](https://miro.com/) with the Entity Relationship Diagram template
+    2. [Whimsical](https://whimsical.com/) with the Flow Chart template and table shapes provided in that template
+    3. [diagrams.net (formerly draw.io)](https://app.diagrams.net/)
+    4. [lucidchart.com](https://www.lucidchart.com/)
+    5. [gleek.io](https://gleek.io/) which uses a more code-like approach to building diagrams
+    6. Pen and paper
 
-#### User Stories
-- As a customer, so I can have a meal tomorrow night, I want to book a table at the restaurant.
-- As the restaurant owner so that I can manage my business effectively I want to be able to alter the number of tables available at a given time.
+# Examples
 
-Design a simplified booking system for this epic.
+## Extracting user stories from the epic
 
-## Extension Exercises
+Let's consider the first two sentences from the point of view of a customer:
 
-Come up with User Stories (and possibly a more detailed Epic) for each of the following scenarios. 
+*"A local cinema wants to allow people to book tickets online to see movies that are being shown in its various screens. These tickets should be delivered to customers via email."*
 
-Then design the database tables and relationships which would be needed to implement them.
+We know that a customer needs to be able to book tickets online, and we know that the delivery method is via email. Using this information, we can put ourselves into the shoes of a customer and construct a short user story:
 
-1. A local candle maker wants to open an online store selling their handmade candles and other artifacts, they need a database system to use as part of this online shop. Details of customers need to be stored, products need to be stored and updated, a record of customer orders also needs to be maintained. Design the database system for the Candle Shop.
+*"As a customer, so I can receive my tickets, I want to provide my contact information."*
 
-2. A car hire company with multiple locations wants to design an online system that will allow customers to book various cars, on various dates from different locations. Design the database system that would allow them to effectively manage their business.
+This has broken down a big block of text (the business case, or "epic" as it's often called) into a single piece of information that we can use. Now that we have a short, single-purpose user story, we can begin to imagine what entities we might need to represent this in a database.
 
-3. A University library wishes to implement an online system for borrowing books and other items from the library. Each user will be able to borrow up to 6 items at a time.
+## Extracting entities from a user story
 
-4. When they originally launched Social Media sites such as Twitter, Identica, Diaspora and Mastodon all described themselves as micro-blogging sites, design a database schema for a similar micro-blogging Social Media site.
+Let's use that user story we extracted above:
 
-5. Think about an online learning system as used by a school, a university or a coding bootcamp, design the database tables etc that might be required to implement such a system.
+*"As a customer, so I can receive my tickets, I want to provide my contact information."*
 
+At first glance, there are two obvious candidates for entities: *Customers* and *Tickets*. This is enough information for us to start creating our diagram - we don't need to worry about relationships at this point.
+
+Let’s then consider a scenario where a customer is booking a ticket as a gift for her husband; she wants the ticket to be in his name, but wants to provide her own contact information so she can surprise him. Does it make sense that the Customer should have a name of "John Smith" but the email address on that entity refers to "jane.smith@gmail.com"?
+
+With this, we can see a third entity has made itself visible: *Contact*. From this one user story, we've extracted three entities!
+
+## Some user stories
+
+- *"As a customer, so I can receive my tickets, I want to provide my contact information."*
+- *"As a customer, so I can decide which movie I want to watch, I want to see a list of movies."*
+- *"As an admin, so I can manage the movies shown at the cinema, I want to update the list of movies."*
